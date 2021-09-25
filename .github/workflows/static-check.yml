@@ -1,7 +1,6 @@
-name: pre-commit
+name: style-check
 
 on:
-  pull_request:
   push:
     branches: master
 
