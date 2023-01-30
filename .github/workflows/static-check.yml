@@ -8,9 +8,10 @@ jobs:
   pre-commit:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-python@v2
-
-    - uses: pre-commit/action@v2.0.3
+    - uses: actions/checkout@v3  # Jan 5, 2023
+    - uses: actions/setup-python@v4  # Jan 9, 2022
+      with:
+        python-version: '3.9'
+    - uses: pre-commit/action@v3.0.0  # Jun 5, 2022
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
