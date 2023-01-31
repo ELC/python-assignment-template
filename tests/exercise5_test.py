@@ -16,7 +16,7 @@ from exercises import exercise5
         (0, 2, 0),
         (0, -2, 0),
     ],
-    ids=["a>0, b>0", "a>0, b<0", "a<0, b>0", "a<0, b<0", "a=0, b>0", "a=0, b<0"],
+    ids=["a>0, b>0", "a>0, b<0", "a<0, b>0", "a<0, b<0", "a=0, b>0", "a=0, b<0"],  # noqa: E501
 )
 def test_division_concrete_examples(a: float, b: float, expected: float):
     assert exercise5.division(a, b) == expected
