@@ -1,4 +1,5 @@
 """Test Suite for Exercise 3"""
+
 import doctest
 
 
